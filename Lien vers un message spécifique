@@ -1,0 +1,12 @@
+Lien vers un message spécifique 
+Renvoie les permaliens de deux messages spécifiques (ID poste 1 et 10) en tant que liens hypertexte dans une liste d'informations.
+
+
+<ul>
+    <li><?php esc_html_e( 'MyBlog info:', 'textdomain' ); ?>
+        <ul>
+            <li><a href="<?php echo esc_url( get_permalink(1) ); ?>"><?php esc_html_e( 'About MyBlog', 'textdomain' ); ?></a></li>
+            <li><a href="<?php echo esc_url( get_permalink(10) ); ?>"><?php esc_html_e( 'About the owner', 'textdomain' ); ?></a></li>
+        </ul>
+    </li>
+</ul>
